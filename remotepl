@@ -1,0 +1,81 @@
+bind [ tlj
+alias tlj "sm_remote_exit;wait 2;+jump;wait 10;-jump;wait 2;sm_remote_off"
+bind p tlj2
+alias tlj2 "sm_remote;wait 5;slot1;wait 2;+jump;wait 10;-jump;wait 2;sm_remote_off"
+alias slj1 "sm_remote_sentry;wait 5;slot1;wait 2;+jump;wait 10;-jump;wait 2;sm_remote_off"
+alias +slj_b "bind mouse2 slj1"
+alias -slj_b "bind mouse2 +attack2"
+bind e +slj_b
+//[051] sm_remote_sentry - Start/stop remote controlling your sentry gun.
+
+
+alias tadv_sj1 "+jump;tadv_s;wait 3;-jump;"
+alias tadv_sj2 "tadv_a;+jump;tadv_a;wait 3;-jump;tadv_s"
+alias tadv_sjb "tadv_sj1;bind b tadv_sj2"
+alias tadv_sjr "bind b tadv_sjb"
+tadv_sjr
+bind n tadv_sir
+
+
+///////////////////////////////////////////
+
+
+///=================ss
+//bind 1 ut_s1
+//bind 2 ut_s2
+//bind 3 ut_s3
+//bind 4 ut_s4
+//bind 5 ut_s5
+///=========================
+alias tadv_s "sm_remote;tadv_bg"
+alias tadv_m "tadv_s"
+alias tadv_a "slot2;wait 1;sm_remote_off"
+
+alias tadv_ubg "bind mouse4 tadv_m"
+alias tadv_um "alias tadv_m"
+alias tadv_rm "exec remotepl"
+
+alias tadv_jg "tadv_a;wait 2;tadv_um;tadv_rm"
+alias tadv_bg "bind mouse4 tadv_jg"
+
+bind mouse4 tadv_m
+alias ut_ub "bind mouse2 +attack2"
+alias ut_b "bind mouse2 ut_mb;"
+alias ut_rb "bind mouse4 tadv_m"
+alias ut_mb "ut_rb;slot10" 
+
+alias ut_s1 "slot1;ut_b"
+alias ut_s2 "slot2;ut_ub"
+alias ut_s3 "slot3;ut_ub"
+alias ut_s4 "slot4;ut_ub"
+alias ut_s5 "slot5;ut_ub"
+alias tadv_s "sm_remote;tadv_bg"
+alias tadv_m "tadv_s"
+alias tadv_a "slot2;wait 1;sm_remote_off"
+
+alias tadv_ubg "bind mouse4 tadv_m"
+alias tadv_um "alias tadv_m"
+alias tadv_rm "exec remotepl"
+
+alias tadv_jg "tadv_a;wait 2;tadv_um;tadv_rm"
+alias tadv_bg "bind mouse4 tadv_jg"
+
+bind mouse4 tadv_m
+
+bind f ut_sb
+alias ut_sb "ut_b"
+alias ut_ub "bind mouse2 +attack2"
+alias ut_b "bind mouse2 ut_mb;"
+alias ut_rb "bind mouse4 tadv_m"
+alias ut_mb "ut_rb;slot10;wait 1;ut_ub" 
+/////////////////////////////////////////////////////
+
+
+
+alias primary "slot1;ut_ub;alias wep2 switch3;alias wep3 switch5;alias downbind switch3;alias upbind switch5;cross1"
+alias second "slot2;ut_ub;alias wep1 switch1;alias wep3 switch6;alias downbind switch6;alias upbind switch1;cross2"
+alias melee "slot3;ut_ub;alias wep1 switch2;alias wep2 switch4;alias downbind switch2;alias upbind switch4;cross3"
+alias ut_s4 "slot4;ut_ub"
+alias ut_s5 "slot5;ut_ub"
+bind 4 ut_s4
+bind 5 ut_s5
